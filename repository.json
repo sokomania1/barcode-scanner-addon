@@ -1,0 +1,22 @@
+{
+  "name": "Custom Add‑On Repository",
+  "url": "https://github.com/sokomania1/barcode-scanner-addon",
+  "maintainer": "sokomania1",
+  "slug": "custom_addons",
+  "description": "Selbstgehostete Add‑Ons für Home Assistant",
+  "addons": [
+    {
+      "name": "Barcode Scanner MQTT",
+      "slug": "barcode_scanner",
+      "description": "Liest einen USB‑Keyboard‑Scanner aus und sendet Barcodes per MQTT.",
+      "version": "1.0",
+      "arch": ["amd64", "aarch64"],
+      "startup": "services",
+      "boot": "auto",
+      "host_network": true,
+      "devices": ["/dev/input/event*"],
+      "options": {},
+      "schema": {}
+    }
+  ]
+}
