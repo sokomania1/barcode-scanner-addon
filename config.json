@@ -1,0 +1,13 @@
+{
+  "name": "Barcode Scanner MQTT",
+  "version": "1.0",
+  "slug": "barcode_scanner",
+  "description": "Liest einen USB‑Keyboard‑Scanner aus und sendet Barcodes per MQTT.",
+  "arch": ["amd64", "aarch64"],
+  "startup": "services",
+  "boot": "auto",
+  "host_network": true,
+  "devices": ["/dev/input/event*"],
+  "options": {},
+  "schema": {}
+}
